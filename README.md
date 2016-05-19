@@ -1,6 +1,12 @@
-Pimp my Log 
+Pimp my Log - Magento
 ===========
 
+Magento
+-Exception Log
+-Developer Logs
+
+
+Fork Of PimpMylog for Magento Instances
 [![Latest Stable Version](https://poser.pugx.org/potsky/pimp-my-log/v/stable.svg)](https://packagist.org/packages/potsky/pimp-my-log) [![Build Status](https://travis-ci.org/potsky/PimpMyLog.svg)](https://travis-ci.org/potsky/PimpMyLog)
 
 All informations are available on [pimpmylog.com](http://pimpmylog.com).
