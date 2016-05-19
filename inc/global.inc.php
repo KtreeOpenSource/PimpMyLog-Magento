@@ -1,5 +1,5 @@
 <?php
-/*! pimpmylog - 1.7.10 - 65d6f147e509133fc5f09642ba82b149ef750ef2*/
+/*! pimpmylog - 1.7.9 - 10b502eaf17be208850be61febb044c2fdb86207*/
 /*
  * pimpmylog
  * http://pimpmylog.com
@@ -655,7 +655,12 @@ function config_extract_tags( $files ) {
 		if ( isset( $file['tags'] ) ) {
 			if ( is_array( $file['tags'] ) ) {
 				foreach ( $file['tags'] as $tag ) {
-					$tags[ strval( $tag ) ][] = $fileid;
+					if( is_array($tag)) {
+						$tags[ strval( $tag['main_tag'] ) ][$tag['sub_tag']][] = $fileid;
+					}
+					else {
+						$tags[ strval( $tag ) ][] = $fileid;
+					}
 				}
 			} else {
 				$tags[ strval( $file['tags'] ) ][] = $fileid;
